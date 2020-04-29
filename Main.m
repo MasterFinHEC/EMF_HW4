@@ -417,8 +417,8 @@ Portfolio.Fees.T1 = (Portfolio.Dynamic.CumReturn2(end) - Portfolio.Static.CumRet
 Portfolio.Fees.T2 = (Portfolio.Dynamic.CumReturn10(end) - Portfolio.Static.CumReturn10(end))/sum(Portfolio.Fees.Lambda10);
 
 % Computing returns with fees
-Portofolio.Fees.Returns2 = Portfolio.Dynamic.Returns2 - Portfolio.Fees.Lambda2'*Portfolio.Fees.T1;
-Portofolio.Fees.Returns10 = Portfolio.Dynamic.Returns10 - Portfolio.Fees.Lambda10'*Portfolio.Fees.T2;
+Portfolio.Fees.Returns2 = Portfolio.Dynamic.Returns2 - Portfolio.Fees.Lambda2'*Portfolio.Fees.T1;
+Portfolio.Fees.Returns10 = Portfolio.Dynamic.Returns10 - Portfolio.Fees.Lambda10'*Portfolio.Fees.T2;
 
 % Plotting the results
 f = figure('Visible','off');
