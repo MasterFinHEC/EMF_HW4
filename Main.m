@@ -422,9 +422,9 @@ Portfolio.Fees.Returns10 = Portfolio.Dynamic.Returns10 - Portfolio.Fees.Lambda10
 
 % Plotting the results
 f = figure('Visible','off');
-plot(table2array(Date(3:end,'Name')),cumsum(Portofolio.Fees.Returns2))
+plot(table2array(Date(3:end,'Name')),cumsum(Portfolio.Fees.Returns2))
 hold on 
-plot(table2array(Date(3:end,'Name')),cumsum(Portofolio.Fees.Returns10))
+plot(table2array(Date(3:end,'Name')),cumsum(Portfolio.Fees.Returns10))
 hold on
 plot(table2array(Date(3:end,'Name')),Portfolio.Static.CumReturn2)
 hold on
